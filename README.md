@@ -1,12 +1,43 @@
 # 🎓 2-TERMO — Linguagens de Marcação, Backend e Banco de Dados
 
-Repositório educacional de **Jhon Wensky Pierre** com exercícios, páginas HTML, práticas de Node.js e modelos de banco de dados desenvolvidos durante o segundo semestre.
-
-O conteúdo é organizado por área e por aula para registrar a evolução do aprendizado. Os exercícios são independentes; cada pasta deve ser entendida como uma etapa de estudo, e não como uma única aplicação pronta para produção.
+<p align="center">
+  <img src="https://shields.io" alt="Status">
+  <img src="https://shields.io" alt="HTML5">
+  <img src="https://shields.io" alt="CSS3">
+  <img src="https://shields.io" alt="JavaScript">
+  <img src="https://shields.io" alt="Node.js">
+  <img src="https://shields.io" alt="MySQL">
+</p>
 
 ---
 
-## 📁 Estrutura Atual
+### 📝 Descrição do Projeto
+Repositório educacional de **Jhon Wensky Pierre** criado para registrar a evolução do aprendizado durante o segundo semestre. O conteúdo é focado em práticas de desenvolvimento web, lógica no backend e modelagem estruturada de dados.
+
+> 💡 **Nota:** Os exercícios são independentes. Cada pasta representa uma etapa de estudo específica e não uma aplicação única de produção.
+
+---
+
+## 📸 Galeria do Projeto
+<p align="center">
+  <img src="https://placeholder.com" width="45%" alt="Preview 1" />
+  <img src="https://placeholder.com" width="45%" alt="Preview 2" />
+</p>
+
+---
+
+## 📁 Estrutura de Pastas
+
+```text
+2-TERMO/
+├── 💻 BACKEND/               # Fundamentos de JavaScript e Node.js
+├── 🗄️ BANCO DE DADOS/       # Modelagem brModelo e Scripts SQL
+├── 🌐 LIMA/                  # Páginas web e Linguagens de Marcação
+└── README.md                 # Documentação do projeto
+```
+
+<details>
+<summary>📂 <b>Clique aqui para ver a árvore detalhada de arquivos</b></summary>
 
 ```text
 2-TERMO/
@@ -27,102 +58,78 @@ O conteúdo é organizado por área e por aula para registrar a evolução do ap
 ├── .gitignore
 └── README.md
 ```
+</details>
 
 ---
 
-## ⚙️ Pré-requisitos
+## ⚙️ Pré-requisitos de Sistema
 
-* **Backend:** Node.js (versão LTS).
-* **Frontend:** Navegador web ou extensão de servidor local (ex: Live Server).
-* **Banco de Dados:** MySQL 8.0+ e software brModelo.
+* **Backend:** `Node.js (versão LTS)`
+* **Frontend:** `Navegador Web` ou extensão `Live Server`
+* **Banco de Dados:** `MySQL 8.0+` e software `brModelo`
 
 ---
 
-## 🚀 Como Executar
+## 🚀 Guia de Execução rápida
 
-### 💻 Backend
-
-1. Entre na pasta principal do backend e instale as dependências:
-   ```bash
-   cd BACKEND
-   npm install
-   ```
-
-2. Execute os exemplos através dos scripts disponíveis:
-   ```bash
-   npm run vendas
-   npm run imc
-   npm run atividade-final
-   ```
-
-3. Para verificar a sintaxe de todos os arquivos JavaScript (sem entradas interativas):
-   ```bash
-   npm test
-   ```
-
-#### 🔄 Atividades Autônomas
-As atividades autônomas possuem um manifesto próprio. Para executá-las de forma independente:
+### ⚙️ Configurando o Backend
 ```bash
-cd BACKEND/AULA3/aula_autonoma
+# Acesse a pasta
+cd BACKEND
+
+# Instale os pacotes necessários
 npm install
-npm run aula01
-npm run aula04
+
+# Execute as tarefas
+npm run vendas
+npm run imc
 npm run atividade-final
-npm test
 ```
 
-### 🌐 Páginas HTML (LIMA)
-
-As páginas de Linguagens de Marcação estão em `LIMA/`. Para testar os links e os ativos locais do *DevSolutions*, abra o arquivo `LIMA/AULA02/DevSolutions/index.html` diretamente no navegador ou inicie um servidor local na raiz do repositório:
-
+### 🌐 Testando o Frontend (LIMA)
+Abra o arquivo `LIMA/AULA02/DevSolutions/index.html` no seu navegador ou rode um servidor local com Python:
 ```bash
 python3 -m http.server 8000
 ```
+Acesse no seu navegador: [http://localhost:8000](http://localhost:8000/LIMA/AULA02/DevSolutions/index.html)
 
-Em seguida, acesse: [http://localhost:8000/LIMA/AULA02/DevSolutions/index.html](http://localhost:8000/LIMA/AULA02/DevSolutions/index.html)
-
-### 🗄️ Banco de Dados
-
-O arquivo `BANCO DE DADOS/AULA2/SMARTCOFFEE_FISICO.sql` contém tabelas, tipos, chaves primárias, chaves estrangeiras e restrições básicas.
-
-* Os arquivos `.brM` são modelos editáveis no **brModelo**.
-* Para importar o esquema textual no **MySQL**:
-
+### 🗄️ Rodando o Banco de Dados
+Para carregar o banco de dados diretamente no seu prompt do MySQL:
 ```bash
 mysql -u seu_usuario -p seu_banco < "BANCO DE DADOS/AULA2/SMARTCOFFEE_FISICO.sql"
 ```
 
 ---
 
-## 🛠️ Tecnologias e Componentes
+## 🛠️ Competências Adquiridas
 
-| Área | Tecnologias / Ferramentas |
-| :--- | :--- |
-| **🌐 Marcação** | HTML5 e CSS3 |
-| **💻 Backend** | JavaScript, Node.js e `readline-sync` |
-| **🗄️ Dados** | Modelagem brModelo e SQL para MySQL 8.0+ |
-| **📝 Documentação** | Markdown |
-
----
-
-## 🎯 Objetivos de Aprendizagem
-
-* Desenvolvimento de páginas web semânticas.
-* Criação de estilos responsivos.
-* Entrada, validação e manipulação de dados.
-* Organização de módulos em Node.js.
-* Modelagem de entidades e relacionamentos (DER/MER).
-* Criação e estruturação de esquemas SQL.
+- [x] Criação de páginas web semânticas e organizadas.
+- [x] Criação de layouts e estilos responsivos.
+- [x] Entrada, validação e manipulação de dados via terminal.
+- [x] Modularização de rotinas e códigos em Node.js.
+- [x] Criação de diagramas de Entidade e Relacionamento (DER/MER).
+- [x] Escrita de scripts SQL bem estruturados.
 
 ---
 
-## 👤 Autor
+## 👤 Desenvolvedor
 
-* **Jhon Wensky Pierre**
-* *Estudante de Desenvolvimento de Software*
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com">
+        <img src="https://github.com.png" width="100px;" alt="Foto do Jhon Wensky"/><br>
+        <sub><b>Jhon Wensky Pierre</b></sub>
+      </a>
+    </td>
+    <td>
+      👋 Olá! Sou estudante de Desenvolvimento de Software.<br>
+      Estou focado em aprender tecnologias modernas de código, criação de bancos de dados eficientes e sistemas integrados de backend.
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 📄 Licença
-
-O conteúdo deste repositório é destinado exclusivamente a fins educacionais. Consulte o autor antes de reutilizar qualquer material ou dados pessoais presentes nos exercícios.
+## 📄 Termos de Uso
+Este ambiente é estritamente **educacional**. Fale com o autor antes de fazer cópias completas do material para outros fins profissionais.
