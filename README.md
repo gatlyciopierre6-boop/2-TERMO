@@ -1,13 +1,10 @@
 # 🎓 2-TERMO — Linguagens de Marcação, Backend e Banco de Dados
 
+## 📸 Galeria do Projeto
 <p align="center">
-  <img src="https://shields.io" alt="Status">
-  <img src="https://shields.io" alt="HTML5">
-  <img src="https://shields.io" alt="CSS3">
-  <img src="https://shields.io" alt="JavaScript">
-  <img src="https://shields.io" alt="Node.js">
-  <img src="https://shields.io" alt="MySQL">
+  <img src="./print1.png" width="90%" alt="Preview do Meu Projeto" />
 </p>
+
 
 ---
 
