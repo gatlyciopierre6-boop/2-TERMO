@@ -21,8 +21,10 @@ create table if not exists aluno(
     telefone varchar(15) not null,
     endereco varchar(100),
     data_nascimento date not null,
-    email varchar(200) not null,
-    );
+    email varchar(200) not null
+);
+
+
 create table instrutor(	
     id_instrutor int auto_increment primary key,
 	nome varchar(60) not null,
@@ -41,14 +43,15 @@ CREATE TABLE Treino(
 	data_fim Text(1)
 );
 
-CREATE TABLE Treino (
-objetivo Text(1),
-data_inicio Text(1),
-Descriçao varchar(255) not null,
-nivel varchar(60) not null,
-id_treino int auto_increment primary key not null PRIMARY KEY,
-data_fim Text(1)
+CREATE TABLE plano(
+    id_plano INT AUTO_INCREMENT PRIMARY KEY,
+    nome_plano VARCHAR(50) NOT NULL,
+    valor DECIMAL(10,2) NOT NULL,
+    modalidade VARCHAR(50) NOT NULL,
+    duracao_meses INT NOT NULL,
+    id_matricula INT NOT NULL
 );
+
 
 
 -- comando para alterar e corrigir
@@ -70,13 +73,20 @@ show tables;
 -- limpar dados da tabela 
 truncate table aluno;
 
+-- inserir dados no bd
+insert into clientes (id_cliente,nome,cpf,telefone,endereco,data_nascimento, status_cliente,data_cadastro)
+values ('', 'jhon', '123.456.789.78', '(19) 7894-4561', 'rua senai', '13/13/2013', 'ativo','');
 
+create table funcionarios (
+id_funcionario int primary key,
+email varchar(255) unique
+);
 
+insert into funcionarios (id_funcionario, email)
+values (1,'jhon@senai.com.br');
 
-
-
-
-
+-- comando para consultar informacoes na tabela
+select * from funcionarios;
 
 
 
